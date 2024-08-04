@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Quiz</title>
+    <link rel="stylesheet" href="questions.css">
+</head>
+<body>
+    <div id="block-container">
+        <!-- Question 1 -->
+        <div class="quiz-question" id="question-1">
+            <h1 class="heading">Who was the first black woman to become a pilot in South Africa?</h1>
+            <div class="block1"><grid-item onclick="answerQuestion(1,1)">Asnath Mahapa</grid-item></div>
+            <div class="block2"><grid-item onclick="answerQuestion(1,0)">Refliwe Ledwaba</grid-item></div>
+            <div class="block3"><grid-item onclick="answerQuestion(1,0)">Siza Mzimela</grid-item></div>
+            <div class="block4"><grid-item onclick="answerQuestion(1,0)">Phumizle Mlambo-Ngcaku</grid-item></div>
+        </div>
+        <!-- Question 2 -->
+        <div class="quiz-question" id="question-2" style="display: none;">
+            <h1 class="heading">Who is the current Minister of Transport in South Africa?</h1>
+            <div class="block1"><grid-item onclick="answerQuestion(2,0)">Dipuo Peters</grid-item></div>
+            <div class="block2"><grid-item onclick="answerQuestion(2,0)">Fikile Mbalula</grid-item></div>
+            <div class="block3"><grid-item onclick="answerQuestion(2,1)">Sindisiwe Chikunga</grid-item></div>
+            <div class="block4"><grid-item onclick="answerQuestion(2,0)">Naledi Pandor</grid-item></div>
+        </div>
+        <!-- Question 3 -->
+        <div class="quiz-question" id="question-3" style="display: none;">
+            <h1 class="heading">Who is recognized as the first black female marine pilot in South Africa?</h1>
+            <div class="block1"><grid-item onclick="answerQuestion(3,1)">Bongiwe Mbambo</grid-item></div>
+            <div class="block2"><grid-item onclick="answerQuestion(3,0)">Zanele Mngadi</grid-item></div>
+            <div class="block3"><grid-item onclick="answerQuestion(3,0)">Sobantu Tilayi</grid-item></div>
+            <div class="block4"><grid-item onclick="answerQuestion(3,0)">Nonhlanhla Mkhize</grid-item></div>
+        </div>
+        <!-- Question 4 -->
+        <div class="quiz-question" id="question-4" style="display: none;">
+            <h1 class="heading">Who was the first woman to hold a senior management position in the Passenger Rail Agency of South Africa (PRASA)?</h1>
+            <div class="block1"><grid-item onclick="answerQuestion(4,0)">Nana Zenani</grid-item></div>
+            <div class="block2"><grid-item onclick="answerQuestion(4,0)">Lindelwa Dlamini</grid-item></div>
+            <div class="block3"><grid-item onclick="answerQuestion(4,0)">Zama Dube</grid-item></div>
+            <div class="block4"><grid-item onclick="answerQuestion(4,1)">Portia Derby</grid-item></div>
+        </div>
+        <!-- Question 5 -->
+        <div class="quiz-question" id="question-5" style="display: none;">
+            <h1 class="heading">Who was the first woman to be appointed as Chief Executive Officer of Transnet, South Africa’s state-owned freight transport and logistics company?</h1>
+            <div class="block1"><grid-item onclick="answerQuestion(5,0)">Poppy Khoza</grid-item></div>
+            <div class="block2"><grid-item onclick="answerQuestion(5,0)">Siyabonga Gama</grid-item></div>
+            <div class="block3"><grid-item onclick="answerQuestion(5,1)">Portia Derby</grid-item></div>
+            <div class="block4"><grid-item onclick="answerQuestion(5,0)">Nonhlanhla Mkhize</grid-item></div>
+        </div>
+    </div>
+    <div id="grid-container">
+        <header>
+            <nav>
+                <img src="Bolt_logo.png" alt="Bolt Logo">
+            </nav>
+        </header>
+    </div>
+    <!-- Results -->
+    <div id="results" style="display: none;">
+        <h2>Quiz Results</h2>
+        <p id="result-message"></p>
+        <button id="try-again" onclick="redirectToURL()" style="display: none;">Try Again</button>
+        <div id="download-images" style="display: none;">
+            <h3>Download Your Woman In Mobility Icon</h3>
+            <div class="download-images">
+                <a href="BONGIWE MBAMBO - 1080x1080.jpg" download>
+                    <img src="BONGIWE MBAMBO - 1080x1080.jpg" alt="Download Image 1">
+                </a>
+                <a href="PORTIA DERBY - 1080x1080.jpg" download>
+                    <img src="PORTIA DERBY - 1080x1080.jpg" alt="Download Image 2">
+                </a>
+                <a href="ASBATH MAHAPA - 1080x1080.jpg" download>
+                    <img src="ASBATH MAHAPA - 1080x1080.jpg" alt="Download Image 3">
+                </a>
+                <a href="SINDISIWE CHIKUNGA - 1080x1080 copy.jpg" download>
+                    <img src="SINDISIWE CHIKUNGA - 1080x1080 copy.jpg" alt="Download Image 3">
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+    
