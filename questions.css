@@ -58,6 +58,8 @@ body {
     cursor: pointer;
     text-align: center;
     position: auto;
+    width: 423px;
+    height: 385px;
 }
 .block1 {
     background-color: #5B68F6;
