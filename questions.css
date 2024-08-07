@@ -205,3 +205,16 @@ button:hover {
 .block4 :hover {
     transform: scale(1.05);
 }
+/* Responsive styles */
+@media (max-width: 768px) {
+  .headline h1 {
+    font-size: 24px;
+  }
+
+}
+@media (max-width: 480px) {
+  .headline h1 {
+    font-size: 20px;
+  }
+
+}
