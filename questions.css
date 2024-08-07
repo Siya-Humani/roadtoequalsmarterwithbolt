@@ -41,7 +41,7 @@ body {
 }
 
 /* Block styles */
-.block1;.block2;block3;block4 {
+.block1,block2,block3,block4 {
     display: flex;
     align-items: center;
     justify-content: center;
