@@ -7,7 +7,6 @@ body {
     justify-content: center;
     align-items: center;
     background-color: black; /* Light background color for contrast */
-    min-height: 100vh; /* Ensure body takes up full viewport height */
 }
 
 /* Container for the quiz questions */
