@@ -148,9 +148,9 @@ img {
     }
 
     .block {
-        height: 180px; /* Adjust block height for smaller screens */
-        width:204px;
-        left:180px;
+        height: 408px; /* Adjust block height for smaller screens */
+        width: 360px;
+        left: 180px;
         font-size: 14px; /* Adjust font size */
     }
 
