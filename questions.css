@@ -6,7 +6,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f0f0f0; /* Light background color for contrast */
+    background-color: black; /* Light background color for contrast */
     min-height: 100vh; /* Ensure body takes up full viewport height */
 }
 
