@@ -9,72 +9,66 @@ body {
     font-family: Arial, sans-serif;
 }
 
+/* Block Container Styling */
 #block-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
+    flex-wrap: wrap;
+    gap: 10px; /* Space between blocks */
+    padding: 10px;
 }
 
+/* Styling for individual quiz questions */
 .quiz-question {
     width: 100%;
-    max-width: 600px;
-    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-.heading {
-    font-size: 1.5rem;
-    text-align: center;
-    margin-bottom: 15px;
-}
-
+/* Styling for grid items */
 .grid-item {
-    display: block;
-    padding: 10px;
-    margin: 5px 0;
-    text-align: center;
-    cursor: pointer;
-    background-color: #f0f0f0;
-    border-radius: 5px;
-}
-
-.grid-item:hover {
-    background-color: #d0d0d0;
-}
-
-#results {
-    text-align: center;
+    flex: 1 1 calc(25% - 10px); /* Four blocks per row */
+    background-color: #ddd;
     padding: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+    cursor: pointer; /* Makes it clear that the items are clickable */
 }
 
-#download-images {
-    margin-top: 20px;
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .grid-item {
+        flex: 1 1 calc(50% - 10px); /* Two blocks per row */
+    }
 }
 
+/* Media query for extra small devices */
+@media (max-width: 480px) {
+    .grid-item {
+        flex: 1 1 100%; /* One block per row */
+    }
+}
+
+/* Results Section Styling */
+#results {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Download Images Section Styling */
 .download-images {
     display: flex;
     flex-wrap: wrap;
+    gap: 10px;
     justify-content: center;
 }
 
 .download-images a {
-    margin: 10px;
-    display: block;
+    display: inline-block;
+    margin: 5px;
 }
 
 .download-images img {
-    max-width: 100px;
-    height: auto;
-}
-
-/* Header Styles */
-header {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-nav img {
-    max-width: 100%;
+    max-width: 150px; /* Adjust as needed */
     height: auto;
 }
