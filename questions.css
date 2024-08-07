@@ -13,11 +13,10 @@ body {
 /* Container for the quiz questions */
 #block-container {
     width: 100%;
-    max-width: 1200px; /* Max width for larger screens */
+    max-width: auto; /* Max width for larger screens */
     height: auto;
     display: grid;
     grid-template-columns: repeat(1, 1fr); /* Single column layout for questions */
-    gap: 20px; /* Space between grid items */
     padding: 20px;
     box-sizing: border-box;
 }
@@ -27,7 +26,6 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Two equal columns */
     grid-template-rows: repeat(2, auto); /* Auto height for rows */
-    gap: 20px; /* Space between blocks */
     background-color: white;
     padding: 20px;
     box-sizing: border-box;
@@ -51,9 +49,9 @@ body {
     font-weight: medium;
     cursor: pointer;
     text-align: center;
-    width: 100%; /* Full width of grid cell */
+    width: 423px; /* Full width of grid cell */
     height: 200px; /* Fixed height */
-    max-width: 423px; /* Max width */
+    max-width: 100%; /* Max width */
     background-color: #ccc; /* Fallback color */
     transition: transform 0.3s ease;
     overflow: hidden; /* Prevent text overflow */
@@ -145,7 +143,7 @@ img {
     }
 
     .block {
-        height: 180px; /* Adjust block height for smaller screens */
+        height: 360px; /* Adjust block height for smaller screens */
         font-size: 14px; /* Adjust font size */
     }
 
