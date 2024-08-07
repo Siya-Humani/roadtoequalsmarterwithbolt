@@ -78,32 +78,3 @@ nav img {
     max-width: 100%;
     height: auto;
 }
-
-/* Media Queries */
-@media (min-width: 1444px) {
-    .heading {
-        font-size: 1.2rem;
-    }
-
-    .grid-item {
-        padding: 8px;
-    }
-
-    .download-images img {
-        max-width: 80px;
-    }
-}
-
-@media (min-width: 480px) {
-    .heading {
-        font-size: 1rem;
-    }
-
-    .grid-item {
-        padding: 6px;
-    }
-
-    .download-images img {
-        max-width: 60px;
-    }
-}
