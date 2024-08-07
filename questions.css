@@ -39,7 +39,7 @@ body {
 }
 
 /* Block styles */
-.block1, .block2, .block3, .block4 {
+.block1, .block2, .block3,.block4{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -47,11 +47,11 @@ body {
     font-weight: medium;
     cursor: pointer;
     text-align: center;
-    width: 100%; /* Full width of grid cell */
-    height: auto; /* Adjust height as needed */
-    max-width: 100%; /* Max width to fit within grid cell */
+    width: 423px;
+    height: 450px; /* Adjust height as needed */
+    max-width: auto;
+    max-height: auto;
     transition: transform 0.3s ease;
-    overflow: hidden; /* Prevent text overflow */
 }
 
 /* Block colors */
