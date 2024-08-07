@@ -141,9 +141,12 @@ img {
     .heading {
         font-size: 18px; /* Smaller font size for mobile */
     }
+@media (max-width: 480px){ 
 
     .block1, .block2, .block3, .block4 {
         font-size: 14px; /* Adjust font size for smaller screens */
+        width: 180px;
+        height:204px;
     }
 
     /* Center the try-again button */
