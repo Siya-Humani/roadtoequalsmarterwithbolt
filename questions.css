@@ -8,6 +8,11 @@ body {
     align-items: center;
     background-color: white; /* Dark background color for contrast */
 }
+.bolt {
+  width: 68px;
+  height: 40px;
+  padding: 20px 10px 15px 20px;
+}
 
 /* Container for the quiz questions */
 #block-container {
