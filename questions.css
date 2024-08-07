@@ -57,10 +57,11 @@ body {
     font-size: 35px;
     cursor: pointer;
     text-align: center;
+    position: auto;
 }
 .block1 {
     background-color: #5B68F6;
-    position:absolute;
+    position: absolute;
     color: white;
     display: grid;
     align-content: right;
@@ -78,7 +79,7 @@ body {
 
 .block2 {
     background-color: #EB4755;
-    position:absolute;
+    position: auto;
     color: white;
     display: grid;
     justify-content: center;
@@ -94,7 +95,7 @@ body {
 
 .block3 {
     background-color: #27B973;
-    position:absolute;
+    position: auto;
     color: white;
     display: grid;
     justify-content: center;
@@ -112,7 +113,7 @@ body {
 
 .block4 {
     background-color: #FF8800;
-    position:absolute;
+    position: auto;
     color: white;
     display: grid;
     justify-content: center;
@@ -162,6 +163,7 @@ grid-item {
     size: 38px;
     color: white;
     cursor: pointer;
+    position: relative;
 }
 
 button:hover {
@@ -205,29 +207,24 @@ button:hover {
 .block4 :hover {
     transform: scale(1.05);
 }
-/* Responsive styles */
-@media (min-width: 768px) {
-  .headline h1 {
-    font-size: 24px;
-  }
-
-}
-@media (min-width: 480px) {
-  .headline h1 {
-    font-size: 20px;
-  }
-
-}
-/* Media query for mobile devices */
-@media (min-width: 768px) {
-    .grid-item {
-        flex: 1 1 calc(50% - 10px); /* Two blocks per row */
-    }
+/* Base styling for quiz-question container */
+.quiz-question {
+    display: grid;
+    grid-template-columns: repeat(2, calc(50% - 10px)); /* 2 columns with spacing */
+    gap: 10px; /* Adjust spacing between blocks */
 }
 
-/* Media query for extra small devices */
-@media (min-width: 480px) {
-    .grid-item {
-        flex: 1 1 100%; /* One block per row */
+/* Styling for each grid-item */
+.grid-item {
+    padding: 10px; /* Adjust padding as needed */
+    border: 1px solid #ddd; /* Optional border for visual separation */
+    background-color: #f9f9f9; /* Optional background color */
+    text-align: center;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 600px) {
+    .quiz-question {
+        grid-template-columns: repeat(2, calc(50% - 10px)); /* 2 columns with spacing */
     }
 }
