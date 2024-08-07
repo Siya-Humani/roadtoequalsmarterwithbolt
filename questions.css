@@ -7,6 +7,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #f0f0f0; /* Light background color for contrast */
+    min-height: 100vh; /* Ensure body takes up full viewport height */
 }
 
 /* Container for the quiz questions */
@@ -15,36 +16,30 @@ body {
     max-width: 1200px; /* Max width for larger screens */
     height: auto;
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columns layout */
+    grid-template-columns: repeat(1, 1fr); /* Single column layout for questions */
     gap: 20px; /* Space between grid items */
     padding: 20px;
     box-sizing: border-box;
-    margin:0 auto;
 }
 
 /* Each quiz question styling */
 .quiz-question {
     display: grid;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 20px;
-    box-sizing: border-box;
     grid-template-columns: repeat(2, 1fr); /* Two equal columns */
     grid-template-rows: repeat(2, auto); /* Auto height for rows */
+    gap: 20px; /* Space between blocks */
+    background-color: white;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 /* Heading styles */
 .heading {
-    grid-column: span 2;
+    grid-column: span 2; /* Span across both columns */
     font-size: 24px;
     font-weight: 600;
     margin: 0 0 20px;
     text-align: center;
-    position:relative;
-    top:0;
-    left:0;
-    opacity:1l
 }
 
 /* Block styles */
@@ -56,9 +51,12 @@ body {
     font-weight: medium;
     cursor: pointer;
     text-align: center;
-    width: 423px;
-    height: 450px; /* Adjust height as needed */
+    width: 100%; /* Full width of grid cell */
+    height: 200px; /* Fixed height */
+    max-width: 423px; /* Max width */
+    background-color: #ccc; /* Fallback color */
     transition: transform 0.3s ease;
+    overflow: hidden; /* Prevent text overflow */
 }
 
 /* Block colors */
@@ -93,7 +91,7 @@ img {
 
 /* Try Again button styling */
 #try-again {
-    border: none;
+    border: solid;
     width: 168px;
     height: 48px;
     color: white;
@@ -106,7 +104,6 @@ img {
     cursor: pointer;
     text-align: center;
     margin: 50px auto;
-    display: block; /* Center the button */
 }
 
 #try-again:hover {
@@ -148,16 +145,8 @@ img {
     }
 
     .block {
-        height: 408px; /* Adjust block height for smaller screens */
-        width: 360px;
-        left: 180px;
+        height: 180px; /* Adjust block height for smaller screens */
         font-size: 14px; /* Adjust font size */
-    }
-
-    /* Stack blocks in a single column */
-    .block-container {
-        grid-template-columns: repeat(2, 1fr); /* Two equal columns */
-        grid-template-rows: repeat(2, auto); /* Auto height for rows */
     }
 
     /* Center the try-again button */
