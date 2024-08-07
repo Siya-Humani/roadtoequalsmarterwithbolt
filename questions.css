@@ -6,7 +6,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black; /* Dark background color for contrast */
+    background-color: white; /* Dark background color for contrast */
 }
 
 /* Container for the quiz questions */
