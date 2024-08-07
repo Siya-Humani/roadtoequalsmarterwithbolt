@@ -14,7 +14,7 @@ body {
 #block-container {
     width: 100%;
     max-width: auto; /* Max width for larger screens */
-    height: auto;
+    max-height: auto;
     display: grid;
     grid-template-columns: repeat(1, 1fr); /* Single column layout for questions */
     padding: 20px;
