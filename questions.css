@@ -207,24 +207,40 @@ button:hover {
 .block4 :hover {
     transform: scale(1.05);
 }
-/* Base styling for quiz-question container */
-.quiz-question {
-    display: grid;
-    grid-template-columns: repeat(2, calc(50% - 10px)); /* 2 columns with spacing */
-    gap: 10px; /* Adjust spacing between blocks */
+/* Container styling */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50vw; /* Take up half of the viewport width */
+    height: 50vh; /* Take up half of the viewport height */
+    margin: auto; /* Center the container */
 }
 
-/* Styling for each grid-item */
-.grid-item {
-    padding: 10px; /* Adjust padding as needed */
-    border: 1px solid #ddd; /* Optional border for visual separation */
-    background-color: #f9f9f9; /* Optional background color */
+/* Block styling */
+.block {
+    flex: 1 1 calc(50% - 10px); /* Each block takes up 50% of container width minus gap */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+    height: calc(50% - 10px); /* Each block takes up 50% of container height minus gap */
+    background-color: #f9f9f9; /* Background color */
+    border: 1px solid #ddd; /* Border for visual separation */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    font-size: 1.2rem; /* Adjust text size as needed */
+    padding: 20px; /* Adjust padding as needed */
 }
 
 /* Mobile-specific styles */
 @media (max-width: 600px) {
-    .quiz-question {
-        grid-template-columns: repeat(2, calc(50% - 10px)); /* 2 columns with spacing */
+    .container {
+        width: 90vw; /* Adjust width to fit mobile screens */
+        height: 90vh; /* Adjust height to fit mobile screens */
+    }
+    
+    .block {
+        flex: 1 1 calc(100% - 10px); /* Each block takes up full width minus gap */
+        height: calc(25% - 10px); /* Each block takes up 25% of container height */
     }
 }
+
