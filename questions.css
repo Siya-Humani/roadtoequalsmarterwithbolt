@@ -25,7 +25,6 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Two equal columns */
     grid-template-rows: repeat(2, auto); /* Auto height for rows */
-    background-color: white;
     padding: 20px;
     box-sizing: border-box;
 }
@@ -51,7 +50,6 @@ body {
     width: auto; /* Full width of grid cell */
     height: auto; /* Fixed height */
     max-width: 100%; /* Max width */
-    background-color: #ccc; /* Fallback color */
     transition: transform 0.3s ease;
     overflow: hidden; /* Prevent text overflow */
 }
