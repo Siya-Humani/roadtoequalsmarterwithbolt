@@ -18,6 +18,8 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Two equal columns */
     box-sizing: border-box;
+    justify-content:right;
+    align-content:right;
 }
 
 /* Each quiz question styling */
@@ -42,7 +44,7 @@ body {
 .block1, .block2, .block3,.block4{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     font-size: 35px;
     font-weight: medium;
     cursor: pointer;
