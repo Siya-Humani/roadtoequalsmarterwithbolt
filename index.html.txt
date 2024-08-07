@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Women in Mobility | Bolt</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Flow+Circular&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <ul>
+    <li><img src="/assets/boltlogo.png" alt="logo" class="bolt"></li>
+    <li><h2 class="right">Share</h2></li>
+  </ul>
+  <div class="headline">
+    <h1>Women in Mobility</h1>
+    <p>Answer the questions and find out how much you know about Women in Mobility in South Africa.</p>
+  </div>
+  <div class="container">
+    <div class="vertical-center">
+      <a href="questions.html"><button type="button">TAKE THE QUIZ</button></a>
+    </div>
+    <div class="main">
+      <img src="/assets/blogpost3.jpg" alt="banner" class="main-image">
+    </div>
+  </div>
+  <footer>
+    <h2 class="left">Download The App</h2>
+    <div class="apps"><img src="/footer_assets/apple.png"><img src="/footer_assets/huawei.png"><img src="/footer_assets/google.png"></div>
+    <p class="left">The collection, arrangement and assembly of all content on this site is the exclusive property of Bolt. You may not copy, reproduce, distribute, publish, display, perform, modify, create derivative works, transmit, or in any other way exploit any part of copyrighted material without permission from Bolt.</p>
+  </footer>
+</body>
+</html>
