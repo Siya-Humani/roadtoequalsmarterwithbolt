@@ -80,7 +80,7 @@ nav img {
 }
 
 /* Media Queries */
-@media (max-width: 768px) {
+@media (min-width: 1444px) {
     .heading {
         font-size: 1.2rem;
     }
@@ -94,7 +94,7 @@ nav img {
     }
 }
 
-@media (max-width: 480px) {
+@media (min-width: 480px) {
     .heading {
         font-size: 1rem;
     }
