@@ -7,19 +7,30 @@
     <link rel="stylesheet" href="questions.css">
 </head>
 <body>
-    <a href="https://bolt.eu/en-za/cities/johannesburg/">
-        <img src="/assets/boltlogo.png" alt="Bolt Logo">
-    </a>
+    <div id="logo-container">
+        <a href="https://bolt.eu/en-za/cities/johannesburg/" class="logo-link">
+            <img src="/assets/boltlogo.png" alt="logo" class="bolt">
+        </a>
+    </div>
     <div id="block-container">
-        <!-- Question 1 -->
+        <!-- Question 1 -->              
+        <div id="heading">
+                <h1 class="heading">Who was the first black woman to become a pilot in South Africa?</h1>
+            </div>              
         <div class="quiz-question" id="question-1">
-            <h1 class="heading">Who was the first black woman to become a pilot in South Africa?</h1>
-            <div class="block1"><div class="grid-item" onclick="answerQuestion(1,1)">Asnath Mahapa</div></div>
-            <div class="block2"><div class="grid-item" onclick="answerQuestion(1,0)">Refliwe Ledwaba</div></div>
-            <div class="block3"><grid-item onclick="answerQuestion(1,0)">Siza Mzimela</grid-item></div>
-            <div class="block4"><grid-item onclick="answerQuestion(1,0)">Phumizle Mlambo-Ngcaku</grid-item></div>
-            
-        </div>
+                <div class="block" style="background-color: #5b68f6;">
+                    <div class="grid-item" onclick="answerQuestion(1,1)">Asnath Mahapa</div>
+                </div>
+                <div class="block" style="background-color: #eb4755;">
+                    <div class="grid-item" onclick="answerQuestion(1,0)">Refliwe Ledwaba</div>
+                </div>
+                <div class="block" style="background-color: #27b973;">
+                    <div class="grid-item" onclick="answerQuestion(1,0)">Siza Mzimela</div>
+                </div>
+                <div class="block" style="background-color: #ff8800;">
+                    <div class="grid-item" onclick="answerQuestion(1,0)">Phumizle Mlambo-Ngcaku</div>
+                </div>
+            </div>
         <!-- Question 2 -->
         <div class="quiz-question" id="question-2" style="display: none;">
             <h1 class="heading">Who is the current Minister of Transport in South Africa?</h1>
@@ -80,4 +91,5 @@
 </body>
 </html>
 
+    
     
