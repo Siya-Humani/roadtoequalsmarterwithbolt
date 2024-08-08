@@ -7,18 +7,15 @@
     <link rel="stylesheet" href="questions.css">
 </head>
 <body>
-    <div id="logo-container">
-        <a href="https://bolt.eu/en-za/cities/johannesburg/" class="logo-link">
-            <img src="/assets/boltlogo.png" alt="logo" class="bolt">
-        </a>
+    <a href="https://bolt.eu/en-za/cities/johannesburg/" class="logo-link">
+        <img src="/assets/boltlogo.png" alt="logo" class="bolt">
+    </a>
     </div>
     <div id="block-container">
-        <!-- Question 1 -->              
-        <div id="heading">
-                <h1 class="heading">Who was the first black woman to become a pilot in South Africa?</h1>
-            </div>              
+        <!-- Question 1 -->                      
         <div class="quiz-question" id="question-1">
-                <div class="block" style="background-color: #5b68f6;">
+             <h1 class="heading">Who was the first black woman to become a pilot in South Africa?</h1>
+             <div class="block" style="background-color: #5b68f6;">
                     <div class="grid-item" onclick="answerQuestion(1,1)">Asnath Mahapa</div>
                 </div>
                 <div class="block" style="background-color: #eb4755;">
@@ -32,36 +29,44 @@
                 </div>
             </div>
         <!-- Question 2 -->
-        <div class="quiz-question" id="question-2" style="display: none;">
+        <div class="quiz-question1" id="question-2" style="display: none;">
             <h1 class="heading">Who is the current Minister of Transport in South Africa?</h1>
-            <div class="block1"><grid-item onclick="answerQuestion(2,0)">Dipuo Peters</grid-item></div>
-            <div class="block2"><grid-item onclick="answerQuestion(2,0)">Fikile Mbalula</grid-item></div>
-            <div class="block3"><grid-item onclick="answerQuestion(2,1)">Sindisiwe Chikunga</grid-item></div>
-            <div class="block4"><grid-item onclick="answerQuestion(2,0)">Naledi Pandor</grid-item></div>
+            <div class="block" style="background-color: #5b68f6;">
+                <div class="grid-item" onclick="answerQuestion(2,0)">Dipuo Peters</grid-item>
+            </div>
+            <div class="block" style="background-color: #eb4755;">
+                    <div class="grid-item" onclick="answerQuestion(2,0)">Fikile Mbalula</grid-item>
+            </div>
+            <div class="block" style="background-color: #27b973;">
+                <div class="grid-item" onclick="answerQuestion(2,1)">Sindisiwe Chikunga</grid-item>
+            </div>
+            <div class="block" style="background-color: #ff8800;">
+                <div class="grid-item" onclick="answerQuestion(2,0)">Naledi Pandor</grid-item>
+            </div>
         </div>
         <!-- Question 3 -->
-        <div class="quiz-question" id="question-3" style="display: none;">
+        <div class="quiz-question2" id="question-3" style="display: none;">
             <h1 class="heading">Who is recognized as the first black female marine pilot in South Africa?</h1>
             <div class="block1"><grid-item onclick="answerQuestion(3,1)">Bongiwe Mbambo</grid-item></div>
-            <div class="block2"><grid-item onclick="answerQuestion(3,0)">Zanele Mngadi</grid-item></div>
-            <div class="block3"><grid-item onclick="answerQuestion(3,0)">Sobantu Tilayi</grid-item></div>
-            <div class="block4"><grid-item onclick="answerQuestion(3,0)">Nonhlanhla Mkhize</grid-item></div>
+            <div class="block"><grid-item onclick="answerQuestion(3,0)">Zanele Mngadi</grid-item></div>
+            <div class="block"><grid-item onclick="answerQuestion(3,0)">Sobantu Tilayi</grid-item></div>
+            <div class="block"><grid-item onclick="answerQuestion(3,0)">Nonhlanhla Mkhize</grid-item></div>
         </div>
         <!-- Question 4 -->
         <div class="quiz-question" id="question-4" style="display: none;">
             <h1 class="heading">Who was the first woman to hold a senior management position in the Passenger Rail Agency of South Africa (PRASA)?</h1>
             <div class="block1"><grid-item onclick="answerQuestion(4,0)">Nana Zenani</grid-item></div>
-            <div class="block2"><grid-item onclick="answerQuestion(4,0)">Lindelwa Dlamini</grid-item></div>
-            <div class="block3"><grid-item onclick="answerQuestion(4,0)">Zama Dube</grid-item></div>
-            <div class="block4"><grid-item onclick="answerQuestion(4,1)">Portia Derby</grid-item></div>
+            <div class="block"><grid-item onclick="answerQuestion(4,0)">Lindelwa Dlamini</grid-item></div>
+            <div class="block"><grid-item onclick="answerQuestion(4,0)">Zama Dube</grid-item></div>
+            <div class="block"><grid-item onclick="answerQuestion(4,1)">Portia Derby</grid-item></div>
         </div>
         <!-- Question 5 -->
         <div class="quiz-question" id="question-5" style="display: none;">
             <h1 class="heading">Who was the first woman to be appointed as Chief Executive Officer of Transnet, South Africa’s state-owned freight transport and logistics company?</h1>
             <div class="block1"><grid-item onclick="answerQuestion(5,0)">Poppy Khoza</grid-item></div>
-            <div class="block2"><grid-item onclick="answerQuestion(5,0)">Siyabonga Gama</grid-item></div>
-            <div class="block3"><grid-item onclick="answerQuestion(5,1)">Portia Derby</grid-item></div>
-            <div class="block4"><grid-item onclick="answerQuestion(5,0)">Nonhlanhla Mkhize</grid-item></div>
+            <div class="block"><grid-item onclick="answerQuestion(5,0)">Siyabonga Gama</grid-item></div>
+            <div class="block"><grid-item onclick="answerQuestion(5,1)">Portia Derby</grid-item></div>
+            <div class="block"><grid-item onclick="answerQuestion(5,0)">Nonhlanhla Mkhize</grid-item></div>
         </div>
     </div>
     <!-- Results -->
@@ -91,5 +96,6 @@
 </body>
 </html>
 
+    
     
     
