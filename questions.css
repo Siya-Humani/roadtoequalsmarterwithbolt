@@ -142,22 +142,8 @@ img {
       flex-direction: column;
     }
   }
-/* Responsive layout for smaller screens */
-@media (min-width: 768px) {
-    .heading {
-        font-size: 18px; /* Smaller font size for mobile */
-    }
-}
-
-@media (max-width: 480px){ 
-    .block {
-        font-size: 14px; /* Adjust font size for smaller screens */
-        width: 180px;
-        height: 204px;
-    }
 
     /* Center the try-again button */
     #try-again {
         margin: 20px auto;
     }
-}
